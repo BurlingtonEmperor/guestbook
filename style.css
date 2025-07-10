@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "ROMANSEX";
+  src: url("ROMANSEX.ttf");
+}
+
+body {
+  font-family: "ROMANSEX";
+}
+
+p, i {
+  margin: 0;
+}
+
+form {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px; /* adjust as needed */
+}
+
 .entry {
   border-bottom: 1px solid #ccc;
   padding: 10px;
@@ -15,4 +34,41 @@
 
 .entry-message {
   margin-top: 5px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.glass-button {
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent glass */
+  backdrop-filter: blur(10px);           /* Glass blur effect */
+  -webkit-backdrop-filter: blur(10px);   /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  /* display: block; 
+  margin: auto; */
+  font-family: "ROMANSEX";
+  color: black;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -2,21 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
     <title>Guestbook Viewer</title>
   
     <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <h2>Guestbook Entries</h2>
-    <div style="margin-top: 10px;">
-      <button id="prev-btn">Previous</button>
-      <button id="next-btn">Next</button>
+    <i class="center-text">No matter where you are...</i>
+    <i class="center-text">Memories will always have the same places.</i>
+    <div style="margin-top: 10px;" class="center-container">
+      <button id="prev-btn" class="glass-button">Previous</button>
+      <button id="next-btn" class="glass-button">Next</button>
     </div>
-    <h2>Sign the Guestbook</h2>
     <form id="guestbook-form">
       <input id="name" placeholder="Your name" required />
       <textarea id="message" placeholder="Your message" required></textarea>
-      <button type="submit">Send</button>
+      <button type="submit" class="glass-button">Send Message</button>
     </form>
     <div id="entries">Loading entries...</div>
 
