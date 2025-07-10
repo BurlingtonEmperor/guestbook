@@ -1,4 +1,4 @@
-const supabase = supabase.createClient(
+const supabaseClient = supabase.createClient(
   'https://YOUR_PROJECT.supabase.co',
   'YOUR_PUBLIC_ANON_KEY'
 );
@@ -10,7 +10,7 @@ async function loadEntries(page = 0) {
   const from = page * PAGE_SIZE;
   const to = from + PAGE_SIZE - 1;
 
-  const { data, error } = await supabase
+  const { data, error } = await supabaseClient
     .from("guestbook")
     .select("name, message, timestamp", { count: "exact" })
     .order("timestamp", { ascending: false })
@@ -68,7 +68,7 @@ document.getElementById("guestbook-form").addEventListener("submit", async (e) =
 
   if (!name || !message) return alert("Please fill out both fields.");
 
-  const { error } = await supabase.from("guestbook").insert([
+  const { error } = await supabaseClient.from("guestbook").insert([
     { name, message, timestamp: new Date().toISOString() }
   ]);
 
