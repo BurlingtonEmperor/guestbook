@@ -1,0 +1,18 @@
+.entry {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.entry time {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.entry-name {
+  font-weight: bold;
+}
+
+.entry-message {
+  margin-top: 5px;
+}
