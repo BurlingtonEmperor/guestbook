@@ -1,6 +1,6 @@
 const supabaseClient = supabase.createClient(
-  'https://YOUR_PROJECT.supabase.co',
-  'YOUR_PUBLIC_ANON_KEY'
+  'https://cxijcqxrcgkvxjpdqlka.supabase.co',
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN4aWpjcXhyY2drdnhqcGRxbGthIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIxMzYwNjIsImV4cCI6MjA2NzcxMjA2Mn0.e1ZzBqPkG76hKXM73XkyBhQ0t9hdNiedS9Iz43TDiWA'
 );
 
 const PAGE_SIZE = 10;
