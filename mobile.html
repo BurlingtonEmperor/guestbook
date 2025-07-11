@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7" />
+
+    <title>Guestbook Viewer</title>
+  
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div class="center-text">
+      <i class="center-text">No matter where you are...</i>
+      <i class="center-text">Memories will always have the same places.</i>
+    </div>
+    <div style="margin-top: 10px;" class="center-container">
+      <button id="prev-btn" class="glass-button">Previous</button>
+      <button id="next-btn" class="glass-button">Next</button>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="glass-wrapper">
+      <form id="guestbook-form" class="center-text glass-form">
+        <input id="name" placeholder="Your name" required />
+        <br/>
+        <textarea id="message" placeholder="Your message" required></textarea>
+        <br/>
+        <button type="submit" class="glass-button">Send Message</button>
+      </form>
+    </div>
+    <div id="entries">Loading entries...</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
