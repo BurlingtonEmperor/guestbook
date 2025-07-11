@@ -1,3 +1,113 @@
+@font-face {
+  font-family: "ROMANSEX";
+  src: url("ROMANSEX.ttf");
+}
+
+body {
+  font-family: "ROMANSEX";
+}
+
+p, i {
+  margin: 0;
+}
+
+form {
+  display: inline-block;  
+}
+
+.entry {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.entry time {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.entry-name {
+  font-weight: bold;
+}
+
+.entry-message {
+  margin-top: 5px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.glass-button {
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent glass */
+  backdrop-filter: blur(10px);           /* Glass blur effect */
+  -webkit-backdrop-filter: blur(10px);   /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  /* display: block; 
+  margin: auto; */
+  font-family: "ROMANSEX";
+  color: black;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48vh;
+}
+
+.glass-form {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 70%;
+  max-width: 400px;
+  color: darkgray;
+}
+
+.glass-form input,
+.glass-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 8px;
+  color: rgb(96, 93, 93);
+  font-size: 1rem;
+}
+
+.glass-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
 #entries {
   width: 40%;
   margin: 0 auto;
@@ -6,7 +116,7 @@
 i {
   font-size: 1.25vw;
 }
-
+/* 
 .glass-form {
   width: 65%;
-}
+} */
